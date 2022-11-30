@@ -58,3 +58,31 @@ h1, h2 {
 .active {
     border-bottom: 1px solid grey
 }
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+}
+#hero-image {
+    height: 600px; /* heigt of the div*/
+    width: 100%; /* fill the screen*/
+    background: url("/assets/images/hero-image.webp") no-repeat center center;
+
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+
+/* creates the level of zoom for hero image*/
+@keyframes hero-zoom {
+    from {
+        transform: scale(1); /*set image to 100% of its size*/
+    }
+    to {
+        transform: scale(1.1); /*set image to 110% of its size*/
+    }
+}
