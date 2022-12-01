@@ -244,3 +244,15 @@ i:hover {
     color: blue
     
 }
+
+/*gallery*/
+
+#photos {
+    clear:both; /*so that the photo diplays below the header*/
+    line-height: 0; /*removes any horizontal gaps between images*/
+    column-count: 4;
+    column-gap: 0;
+}
+#photos img {
+    width: 100%
+}
