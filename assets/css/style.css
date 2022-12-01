@@ -63,8 +63,15 @@ h1, h2 {
     height: 600px;
     width: 100%;
     overflow: hidden;
+    position: relative;
 
 }
+/* We need to specify cover-text h2 to override the default settings */
+#cover-text, #cover-text h2 {
+    color: #fff;
+}
+
+
 #hero-image {
     height: 600px; /* heigt of the div*/
     width: 100%; /* fill the screen*/
@@ -85,4 +92,25 @@ h1, h2 {
     to {
         transform: scale(1.1); /*set image to 110% of its size*/
     }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+/*Width and height values for the cover-text div*/
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 104, .7);
+
+    bottom: 30px; /*bottom will be 30pix above the botom of the image*/
+    right: 150px;/*right will be 150pix from the the right of the image*/
+
+    position: absolute; /*set it in place. by default it is fixed relative to the entire screen so we need to go to the parent and 
+    set its position to relative so the child element can set its position relative to teh image*/
 }
