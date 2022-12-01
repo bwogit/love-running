@@ -124,18 +124,46 @@ h1, h2 {
     padding-top: 30px;
     width: 33%;/* a 1/3 of the full screen*/
     float: left;
-    background-color: blue;
+   
 }
 
 #right-about{
     padding-top: 30px;
     width: 33%;/* a 1/3 of the full screen*/
     float: right;
-    background-color: silver;
+    
 }
 #center-about{
     padding-top: 30px;
     width: 33%;/* a 1/3 of the full screen*/
     margin: 0 auto; /*there is no float: center option */
     background-color: green;
+}
+hr {
+    border-top: 1px solid #3a3a3a ;
+    width: 100%;
+    margin: 5px 0;
+}
+.left-about-heading {
+    width: 60%;
+    float: right; /* floats to the right of its conatainer(div) To alight with the picture in the middle*/
+    line-height: 20px;
+    clear: both; /* each content is aligned vertically*/
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left; /* floats to the left of its container (div) To alight with the picture in the middle*/
+    line-height: 20px;
+    clear: both; /* each content is aligned vertically*/
+    margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
 }
