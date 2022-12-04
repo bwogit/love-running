@@ -284,9 +284,19 @@ i:hover {
         padding: 0;
 
     }
+
+    #times > div {
+        width: 100%; /*to fill the screen width*/
+        /*clear: both; /* stack them vertically by setting clear to both */
+        height: 150px;
+        padding: 0;
+    }
+
     hr {
         display: none;
     }
+
+    
      
 }
 
@@ -325,7 +335,15 @@ i:hover {
         padding: 0 20px;
         
     }
-   
+   #photos {
+    column-count: 3;
+   }
 
     
+}
+
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+       }
 }
